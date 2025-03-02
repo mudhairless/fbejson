@@ -1,7 +1,7 @@
-# FBjson
+# FBEjson
 
 ## About
-FBjson is a JSON/BSON parsing library for the [FreeBASIC](https://www.freebasic.net) language. Also included is
+FBEjson is a JSON/BSON parsing library for the [FreeBASIC](https://www.freebasic.net) language. Also included is
 a base64 encoder/decoder library as it is used by portions of the BSON support.
 
 ## Examples
