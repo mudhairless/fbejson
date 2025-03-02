@@ -14,7 +14,9 @@
 #ifndef FBBASE64_BI__
 #define FBBASE64_BI__ -1
 
-#include once "common.bi"
+#ifndef null
+const null = cast(any ptr, 0)
+#endif
 
 #inclib "fbbase64"
 

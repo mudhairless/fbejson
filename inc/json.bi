@@ -10,7 +10,9 @@
 #ifndef __FB_JSON__
 #define __FB_JSON__ -1
 
-#include once "common.bi"
+#ifndef null
+const null = cast(any ptr, 0)
+#endif
 
 #inclib "fbjson"
 
