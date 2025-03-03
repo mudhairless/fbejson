@@ -14,7 +14,7 @@
 const null = cast(any ptr, 0)
 #endif
 
-#inclib "fbjson"
+#inclib "fbejson"
 
 ''Namespace: json
 namespace json
@@ -29,11 +29,6 @@ namespace json
         jnumber
         jboolean
     end enum
-
-    type PossiblyInvalidBoolean
-        value as boolean
-        isValid as boolean
-    end type
 
     type jarray_f as JSONarray
     type jobject_f as JSONobject
@@ -91,7 +86,7 @@ namespace json
 
         ''Function: getBool
         ''Get the boolean value, or invalid if this object is not a boolean.
-        declare function getBool() as PossiblyInvalidBoolean
+        declare function getBool() as boolean
 
         ''Function: getObject
         ''Get the <JSONobject> ptr value, or null if this object is not an <JSONobject>.

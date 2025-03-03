@@ -217,15 +217,14 @@ function JSONvalue.getNumber() as double
     end if
 end function
 
-function JSONvalue.getBool() as PossiblyInvalidBoolean
-    dim ret as PossiblyInvalidBoolean
+function JSONvalue.getBool() as boolean
+    
     if m_type = jvalue_type.jboolean then
-        ret.value = m_bool
-        ret.isValid = true
+        return m_bool
     else
-        ret.isValid = false
+        return false
     end if
-    return ret
+    
 end function
 
 destructor JSONvalue

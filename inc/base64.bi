@@ -18,7 +18,7 @@
 const null = cast(any ptr, 0)
 #endif
 
-#inclib "fbbase64"
+#inclib "fbebase64"
 
 ''Namespace: base64
 
