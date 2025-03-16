@@ -1,3 +1,8 @@
+@IF "%fbc%"=="" (
+    @echo Please run SET FBC=fbc32 or your preferred compiler first
+    @goto :eof
+)
+
 @echo Clearing Old Build Files
 del src\*.o
 del lib\*.a
